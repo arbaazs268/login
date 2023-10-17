@@ -1,0 +1,28 @@
+.button-background{
+    width: 150px;
+    background-color: grey;
+    padding-bottom: 0%;
+}
+.sidebar{
+    margin-top:-16px;
+    background-color: grey;
+    min-height: 150vh;
+    width: 150px;
+}
+li{
+    list-style: none;
+
+}
+.home-button{
+    background-color: grey;
+    border: none;
+}
+.sign-out-button{
+    background-color: grey;
+    border: none;
+}
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

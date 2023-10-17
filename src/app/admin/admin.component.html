@@ -1,0 +1,17 @@
+<div class="admin">
+  <div class="button-background">
+    <button (click)="sidebar()" class="hamburger">
+        <svg src="./hamburger.svg" width="50" height="50"></svg>
+    </button>
+  </div>
+    <div class="sidebar" *ngIf="hide">
+      <ul>
+        <li><button routerLink="/"  class="home-button">Home</button></li>
+        <li><button routerLink="/login"  class="home-button">login</button></li>
+        <li><button (click)="logout()" class="sign-out-button">signout</button></li>
+      </ul>
+    </div>
+</div>
+<h1 *ngIf="showElement">
+  admin page
+</h1>

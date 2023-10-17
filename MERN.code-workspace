@@ -1,0 +1,24 @@
+{
+	"folders": [
+		{
+			"path": "../MERN"
+		},
+		{
+			"path": "../Java-programming"
+		},
+		{
+			"path": "../FRONTEND_MENTOR_CHALLENGES"
+		},
+		{
+			"path": "../my-app"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.CustomBrowser": "firefox",
+		"liveServer.settings.NoBrowser": true,
+		"liveServer.settings.multiRootWorkspaceName": "login"
+	}
+}

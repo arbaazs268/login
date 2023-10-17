@@ -1,0 +1,22 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
+</style>
+<div class="button-background">
+    <button (click)="sidebar()" class="hamburger">
+        <svg src="src/app/admin/hamburger.svg" width="50" height="50"></svg>
+    </button>
+  </div>
+    <div class="sidebar" *ngIf="hide">
+      <ul>
+          <li><button routerLink="/landing" (click)="home()"class="home-button">Home</button></li>
+          <li><button routerLink="/login" (click)='login_alert()' class="login_page">Login</button></li>
+          <li><button (click)="logout()" class="sign-out-button">signout</button></li>
+        </ul>
+    </div>
+<div id="container" [formGroup]="form">
+    <h1>login</h1>
+    <input type="text" formControlName="username" placeholder="Username" id="username"/>
+    <input type="password" formControlName="password" placeholder="Password" id="password"/>
+    <button (click)="login()" [disabled]="!form.valid" class="action_button">login</button>
+    {{form.value|json}}
+</div> 
